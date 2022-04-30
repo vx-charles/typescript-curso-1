@@ -15,7 +15,7 @@ export class NegociacaoController {
         this.limparFormulario();
     }
     criaNegociacao() {
-        const exp = /-/g;
+        const exp = /-/g; // filtra todos os caracteres que tem "-", "g" significa global.
         const date = new Date(this.inputData.value.replace(exp, ','));
         const quantidade = parseInt(this.inputQuantidade.value);
         const valor = parseFloat(this.inputValor.value);

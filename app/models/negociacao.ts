@@ -5,7 +5,7 @@ export class Negociacao {
         public readonly valor: number
     ) {}
 
-    get volume(): number {
+    get volume(): number { // o "get" é como se fosse uma propriedade de class, ele te dá o acesso aos atributos privados caso vc queira exibir em tela.
         return this.quantidade * this.valor;
     }
 
